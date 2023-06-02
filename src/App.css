@@ -1,5 +1,15 @@
+.nav{
+  width: 100vw;
+  position: absolute;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -8,13 +18,16 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .background {
+    height: 100vh;
+    width: 100vw;
+    position:fixed;
+    z-index: -1;
+    background-color: rgba(128, 128, 128, 0.298);
   }
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,10 +37,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +44,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.under{
+  color: black;
+  background-color: white;
 }
