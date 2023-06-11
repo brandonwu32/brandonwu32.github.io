@@ -1,0 +1,44 @@
+
+
+
+
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar{
+    position: fixed;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: left;
+    gap: 80vw;
+
+    @media (max-width: 415px){
+        gap: 50vw;
+    }
+}
+
+.name-title{
+
+    font-family: Kaushan;
+    font-size: 2em;
+    padding-left: 5%;
+}
+
+.menu-button{
+    height: 50%;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.menu-button:hover {
+    background: rgb(201, 198, 198);
+}

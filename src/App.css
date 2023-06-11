@@ -1,5 +1,5 @@
 .nav{
-  width: 100vw;
+  width: 100%;
   position: absolute;
   background-color: gray;
   display: flex;
@@ -19,8 +19,8 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .background {
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: auto;
     position:fixed;
     z-index: -1;
     background-color: rgba(128, 128, 128, 0.298);
@@ -49,4 +49,8 @@
 .under{
   color: black;
   background-color: white;
+}
+
+.name-title{
+  font-family: Poppins;
 }
