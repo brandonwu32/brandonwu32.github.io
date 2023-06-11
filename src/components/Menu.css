@@ -1,10 +1,14 @@
+
+
 .menu{
     position: fixed;
     background-color: #363F55;
     right: 0;
-    width: 25%;
+    z-index: 1;
+    @media (min-width: 415px){
+        max-width: 25%;
+    }
     height: 100%;
-}
-
-.rand{
+    display: hidden;
+    transition: width 0.2s ease-in;
 }
