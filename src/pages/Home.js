@@ -13,6 +13,7 @@ import Linkedin from "../static/linkedin.png";
 import Projects from "../components/Projects";
 import Experiences from '../components/Experiences';
 import Consulting from '../components/Consulting';
+import Search from "../components/Search";
 
 function App() {
 
@@ -126,17 +127,19 @@ function App() {
               <button onClick = {toggleExperiences} className = "portfolio-item">Experiences</button>
               <button onClick = {toggleSearch} className = "portfolio-item-last">Search 🔎</button>
           </div>
-          <div className = "Projects" style = {{display: projectsdisplay}}>
-            <Projects></Projects>
-          </div>
-          <div className = "Consulting" style = {{display: consultingdisplay}}>
-            Consulting
-          </div>
-          <div className = "Experiences" style = {{display: experiencesdisplay}}>
-            Experiences
-          </div>
-          <div className = "Search" style = {{display: searchdisplay}}>
-            Search
+          <div className = "portfolio-sections">
+            <div className = "Projects" style = {{display: projectsdisplay}}>
+              <Projects></Projects>
+            </div>
+            <div className = "Consulting" style = {{display: consultingdisplay}}>
+              <Consulting></Consulting>
+            </div>
+            <div className = "Experiences" style = {{display: experiencesdisplay}}>
+              <Experiences></Experiences>
+            </div>
+            <div className = "Search" style = {{display: searchdisplay}}>
+              <Search></Search>
+            </div>
           </div>
         </div>
       </div>
