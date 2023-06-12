@@ -56,7 +56,7 @@
   color: transparent;
   background-image: linear-gradient(to top, rgb(255,255,255,0.2), transparent);
   bottom: 0;
-  z-index: 6;
+  z-index: 4;
 }
 
 .space{
@@ -227,6 +227,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow-x: hidden;
 }
 
 .portfolio{
@@ -235,4 +236,49 @@
   padding-left: 5%;
   padding-top: 5%;
   color: white;
+}
+
+.portfolio-menu{
+  padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 3%;
+}
+
+.portfolio-item{
+  font-family: Poppins;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-right: solid 1px;
+  padding-right: 5%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.portfolio-item-last{
+  font-family: Poppins;
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding-right: 5%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.All{
+  
+}
+
+.Projects{
+  
+}
+
+.Consulting{
+  
+}
+
+.Search{
+  
 }
