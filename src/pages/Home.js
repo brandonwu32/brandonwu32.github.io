@@ -140,6 +140,9 @@ function App() {
             <div className = "Search" style = {{display: searchdisplay}}>
               <Search></Search>
             </div>
+            <div id = "bottom" className = "bottom">
+                -
+            </div>
           </div>
         </div>
       </div>

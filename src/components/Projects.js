@@ -1,6 +1,7 @@
 import "./Projects.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Projectbox from "./Projectbox";
 
 function Projects() {
     let [projectboxes, setprojectboxes] = useState([]);
@@ -15,27 +16,35 @@ function Projects() {
         axios.get(url, config)
         .then(res => {
           let tableEntries = res.data.records;
-          let items1 = [];
+          let items = [];
           tableEntries.forEach(record => {
             let entry = record.fields;
             let item = {
-              name1: entry["Project Name"],
-              startend1: entry["Start to End"],
-              projectrole: entry["Project Role"],
-              projectdesc: entry["Project Description"],
+              name: entry["Name"],
+              startend: entry["Start to End"],
+              role: entry["Role"],
+              desc: entry["Description"],
             }
-            items1.push(item);
+            items.push(item);
           });
-          setprojectboxes(items1);
+          setprojectboxes(items);
         })
         .catch(err=> console.log(err))
     
       }, []);
     return (
-        <div>
-            Hello
+        <div className = "projects">
+          <Projectbox name = {"Insight Housing"} startend = {"March 2023 - June 2023"} role = {"Developer"} desc = {"Made a donation portal"} what1 = {"a donation portal"} what2 = {"facilitates the donation of items"} how = {"tech1, tech2, tech3, tech4, tech5"} image = {"https://github.com/brandonwu32/webmusic/blob/main/Screenshot%202023-06-05%20at%2011.41.42%20AM.png?raw=true"}></Projectbox>
+          <Projectbox name = {"Insight Housing"} startend = {"March 2023 - June 2023"} role = {"Developer"} desc = {"Made a donation portal"} what1 = {"a donation portal"} what2 = {"facilitates the donation of items"} how = {"tech1, tech2, tech3, tech4, tech5"} image = {"https://github.com/brandonwu32/webmusic/blob/main/Screenshot%202023-06-05%20at%2011.41.42%20AM.png?raw=true"}></Projectbox>
+          <Projectbox name = {"Insight Housing"} startend = {"March 2023 - June 2023"} role = {"Developer"} desc = {"Made a donation portal"} what1 = {"a donation portal"} what2 = {"facilitates the donation of items"} how = {"tech1, tech2, tech3, tech4, tech5"} image = {"https://github.com/brandonwu32/webmusic/blob/main/Screenshot%202023-06-05%20at%2011.41.42%20AM.png?raw=true"}></Projectbox>
+          <Projectbox name = {"Insight Housing"} startend = {"March 2023 - June 2023"} role = {"Developer"} desc = {"Made a donation portal"} what1 = {"a donation portal"} what2 = {"facilitates the donation of items"} how = {"tech1, tech2, tech3, tech4, tech5"} image = {"https://github.com/brandonwu32/webmusic/blob/main/Screenshot%202023-06-05%20at%2011.41.42%20AM.png?raw=true"}></Projectbox>
+
         </div>
     );
 }
 
 export default Projects;
+
+/*            {projectboxes.map(item => (
+                <Projectbox name={item["name"]} startend = {item['startend']} role={item["role"]} desc={item["desc"]}/>
+              ))}*/

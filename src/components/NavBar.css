@@ -16,6 +16,7 @@
     justify-content: left;
     gap: 80vw;
     transition: background-color 0.5s;
+    backdrop-filter: blur(4px);
     @media (max-width: 415px){
         gap: 50vw;
     }
@@ -57,6 +58,7 @@
 .menu-button:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #ffffff;
+    filter: invert(1);
 }
 
 .menu-button:hover {

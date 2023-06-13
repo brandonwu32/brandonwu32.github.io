@@ -4,15 +4,16 @@ import { NavLink } from "react-router-dom";
 import X from "../static/X.png";
 
 function Menu(props){
-    const [ menuDisplay, setMenuDisplay ] = useState("0%");
+    const [ menuDisplay, setMenuDisplay ] = useState("0");
 
     useEffect(() =>{
         setMenuDisplay("50%");
     }, []);
 
     function Exit() {
-        props.exit();
-    }
+        setMenuDisplay("0%");
+        setTimeout(props.exit, 500);
+    };
 
     return (
         <div className = "menu" style = {{width: menuDisplay}}>
