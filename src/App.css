@@ -270,12 +270,21 @@
 }
 
 .Projects{
+  text-align: left;
+  padding-top: 1vw;
+}
+
+.Experiences{
+  text-align: left;
+  padding-top: 1vw;
 }
 
 .Consulting{
-  
+  text-align: left;
+  padding-top: 1vw;
 }
 
 .Search{
-  
+  text-align: left;
+  padding-top: 1vw;
 }

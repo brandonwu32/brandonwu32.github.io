@@ -129,15 +129,19 @@ function App() {
           </div>
           <div className = "portfolio-sections">
             <div className = "Projects" style = {{display: projectsdisplay}}>
+              <h1 className = "section-title">Projects</h1>
               <Projects></Projects>
             </div>
             <div className = "Consulting" style = {{display: consultingdisplay}}>
+              <h1 className = "section-title">Consulting</h1>
               <Consulting></Consulting>
             </div>
             <div className = "Experiences" style = {{display: experiencesdisplay}}>
+              <h1 className = "section-title">Experiences</h1>
               <Experiences></Experiences>
             </div>
             <div className = "Search" style = {{display: searchdisplay}}>
+              <h1 className = "section-title">Search</h1>
               <Search></Search>
             </div>
             <div id = "bottom" className = "bottom">

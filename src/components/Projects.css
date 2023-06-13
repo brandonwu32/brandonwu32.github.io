@@ -1,6 +1,7 @@
 .projects{
     display: flex;
     flex-direction: row;
-    gap: 5%;
     overflow-x: auto;
+    width: 100vw;
+    gap: 2.5%;
 }

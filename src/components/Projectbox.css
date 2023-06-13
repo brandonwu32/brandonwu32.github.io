@@ -3,15 +3,22 @@
     height: 22.5vh;
     grid-row-start: 1;
     grid-column-start: 1;
+    border-radius: 10px;
+    @media (max-width: 415px) {
+        height: 7vh;
+    }
+    
 }
 
 .project-box{
-    width: 100%;
+    width: 25vw;
     height: 100%;
-    margin-top: 4vw;
+    margin-top: 1vw;
     justify-content: right;
     display: grid;
     grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .project-text{
@@ -20,11 +27,14 @@
     grid-row-start: 1;
     grid-column-start: 1;
     color: transparent;
-    background: linear-gradient(to right, rgb(255,255,255, 0.5), rgb(255, 255, 255,1)) var(--p, 0) / var(--p, 0) no-repeat;
+    background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(165, 141, 233)) var(--p, 0) / var(--p, 0) no-repeat;
     text-align: right;
-    line-height: 1vw;
+    line-height: 0.5vw;
     transition: .4s, background-position 0s;
+    text-decoration: none;
     z-index: 2;
+    border-radius: 10px;
+
     @media (max-width: 415px) {
         display: none;
     }
@@ -35,6 +45,7 @@
 
 .project-name{
     font-family: Poppins;
+    line-height: 3vh;
 }
 
 .project-startend{
@@ -44,7 +55,11 @@
 
 .project-desc{
     font-weight: 500;
+    line-height: 1.5vh;
+}
 
+.project-role{
+    font-weight: 500;
 }
 
 .highlight1{
