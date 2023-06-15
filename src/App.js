@@ -53,6 +53,9 @@ function App() {
           <Route path = "/consulting" element={<ConsultingPage/>}/>
           <Route path = "/search" element={<SearchPage/>}/>
         </Routes>
+        <div className = "footer">
+          Made with 💪 by Brandon Wu
+        </div>
       </div>
     </Router>
   );

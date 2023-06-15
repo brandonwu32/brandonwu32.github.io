@@ -21,8 +21,20 @@ function App() {
   const [ consultingdisplay, setConsultingDisplay ] = useState("block");
   const [ experiencesdisplay, setExperiencesDisplay ] = useState("block");
   const [ searchdisplay, setSearchDisplay ] = useState("none");
+  const [ allColor, setAllColor] = useState("rgb(129, 230, 242)");
+  const [ projectsColor, setProjectsColor] = useState("white");
+  const [ consultingColor, setConsultingColor] = useState("white");
+  const [ experiencesColor, setExperiencesColor] = useState("white");
+  const [ searchColor, setSearchColor] = useState("white");
+
+
 
   function toggleAll() {
+    setProjectsColor("white");
+    setExperiencesColor("white");
+    setConsultingColor("white");
+    setAllColor("rgb(129, 230, 242)");
+    setSearchColor("white");
     setProjectsDisplay("block");
     setConsultingDisplay("block");
     setExperiencesDisplay("block")
@@ -30,6 +42,11 @@ function App() {
   }
 
   function toggleProjects() {
+    setProjectsColor("rgb(129, 230, 242)");
+    setExperiencesColor("white");
+    setConsultingColor("white");
+    setSearchColor("white");
+    setAllColor("white");
     setProjectsDisplay("block");
     setConsultingDisplay("none");
     setExperiencesDisplay("none")
@@ -37,6 +54,11 @@ function App() {
   }
 
   function toggleConsulting() {
+    setProjectsColor("white");
+    setExperiencesColor("white");
+    setConsultingColor("rgb(129, 230, 242)");
+    setAllColor("white");
+    setSearchColor("white");
     setProjectsDisplay("none");
     setConsultingDisplay("block");
     setExperiencesDisplay("none")
@@ -44,6 +66,11 @@ function App() {
   }
 
   function toggleExperiences() {
+    setProjectsColor("white");
+    setExperiencesColor("rgb(129, 230, 242)");
+    setConsultingColor("white");
+    setAllColor("white");
+    setSearchColor("white");
     setProjectsDisplay("none");
     setConsultingDisplay("none");
     setExperiencesDisplay("block")
@@ -51,6 +78,11 @@ function App() {
   }
 
   function toggleSearch() {
+    setProjectsColor("white");
+    setExperiencesColor("white");
+    setConsultingColor("white");
+    setAllColor("white");
+    setSearchColor("rgb(129, 230, 242)");
     setProjectsDisplay("none");
     setConsultingDisplay("none");
     setExperiencesDisplay("none");
@@ -121,11 +153,11 @@ function App() {
         <div className = "page3">
           <p className = "portfolio">Portfolio</p>
           <div className = "portfolio-menu">
-              <button onClick = {toggleAll} className = "portfolio-item">All</button>
-              <button onClick = {toggleProjects} className = "portfolio-item">Projects</button>
-              <button onClick = {toggleConsulting} className = "portfolio-item">Consulting</button>
-              <button onClick = {toggleExperiences} className = "portfolio-item">Experiences</button>
-              <button onClick = {toggleSearch} className = "portfolio-item-last">Search 🔎</button>
+              <button onClick = {toggleAll} className = "portfolio-item"><p style = {{color: allColor}}>All</p></button>
+              <button onClick = {toggleProjects} className = "portfolio-item"><p style = {{color: projectsColor}}>Projects</p></button>
+              <button onClick = {toggleConsulting} className = "portfolio-item"><p style = {{color: consultingColor}}>Consulting</p></button>
+              <button onClick = {toggleExperiences} className = "portfolio-item"><p style = {{color: experiencesColor}}>Experiences</p></button>
+              <button onClick = {toggleSearch} className = "portfolio-item-last"><p style = {{color: searchColor}}>Search 🔎</p></button>
           </div>
           <div className = "portfolio-sections">
             <div className = "Projects" style = {{display: projectsdisplay}}>

@@ -272,19 +272,30 @@
 .Projects{
   text-align: left;
   padding-top: 1vw;
+  transition: display 1s;
 }
 
 .Experiences{
   text-align: left;
   padding-top: 1vw;
+  transition: display 1s;
 }
 
 .Consulting{
   text-align: left;
   padding-top: 1vw;
+  transition: display 1s;
 }
 
 .Search{
   text-align: left;
   padding-top: 1vw;
+  transition: display 1s;
+}
+
+.footer{
+  font-family: Poppins;
+  padding: 0.5rem;
+  background-color: #363F55;
+  color: white;
 }
