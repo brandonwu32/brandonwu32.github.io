@@ -1,6 +1,6 @@
 import "./Projectbox.css";
 
-function Projectbox(props){
+function Experiencebox(props){
 
     return (
         <div className = "project-box">
@@ -16,4 +16,4 @@ function Projectbox(props){
     );
 };
 
-export default Projectbox;
+export default Experiencebox;

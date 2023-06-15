@@ -4,10 +4,18 @@
     grid-row-start: 1;
     grid-column-start: 1;
     border-radius: 10px;
+    border: none;
+    align-items: center;
     @media (max-width: 415px) {
         height: 7vh;
     }
-    
+
+}
+
+.value{
+    border-radius: 10px;
+    width: 95%;
+    height: 90%;
 }
 
 .project-box{
@@ -23,6 +31,7 @@
 }
 
 .project-text{
+    border: none;
     width: 25vw;
     height: 22.5vh;
     grid-row-start: 1;
@@ -35,7 +44,7 @@
     text-decoration: none;
     z-index: 2;
     border-radius: 10px;
-
+    font-size: 1rem;
     @media (max-width: 415px) {
         display: none;
     }
@@ -55,7 +64,6 @@
 }
 
 .project-desc{
-    font-weight: 500;
     line-height: 2vh;
 }
 
@@ -67,4 +75,4 @@
     background: linear-gradient(#faf593 0 0) var(--p, 0) / var(--p, 0) no-repeat;
     transition: .4s, background-position 0s;
   }
-  
+

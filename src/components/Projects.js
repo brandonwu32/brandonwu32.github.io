@@ -24,6 +24,9 @@ function Projects() {
               role: entry["Role"],
               desc: entry["Description"],
               image: entry["Image"],
+              how: entry["How It Was Made"],
+              what: entry["What It Does"],
+              skills: entry["Skills"],
             }
             items.push(item);
           });

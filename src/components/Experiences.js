@@ -1,9 +1,9 @@
 import "./Experiences.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Projectbox from "./Projectbox";
+import Experiencebox from "./Experiencebox";
 
-function Projects() {
+function Experiences() {
     let [projectboxes, setprojectboxes] = useState([]);
     useEffect(() => {
         const url = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.env.REACT_APP_EXP_ID}`;
@@ -24,6 +24,9 @@ function Projects() {
               role: entry["Role"],
               desc: entry["Description"],
               image: entry["Image"],
+              where: entry["Where Was It"],
+              what: entry["What I Did"],
+              skills: entry["Skills"],
             }
             items.push(item);
           });
@@ -34,13 +37,13 @@ function Projects() {
     return (
         <div className = "projects">
           {projectboxes.map(project => (
-            <Projectbox name = {project.name} startend = {project.startend} role = {project.role} desc = {project.desc} image = {project.image}/>
+            <Experiencebox name = {project.name} startend = {project.startend} role = {project.role} desc = {project.desc} image = {project.image}/>
           ))}
         </div>
     );
 }
 
-export default Projects;
+export default Experiences;
 
 /*            {projectboxes.map(item => (
                 <Projectbox name={item["name"]} startend = {item['startend']} role={item["role"]} desc={item["desc"]}/>
