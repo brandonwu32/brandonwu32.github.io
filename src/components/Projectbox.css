@@ -5,6 +5,20 @@
     grid-column-start: 1;
     border-radius: 10px;
     border: none;
+    background-color: white;
+    @media (max-width: 415px) {
+        height: 7vh;
+    }
+
+}
+
+.prop-image1{
+    height: 22.5vh;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
     align-items: center;
     @media (max-width: 415px) {
         height: 7vh;
@@ -25,9 +39,9 @@
     justify-content: right;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: white;
     border-radius: 10px;
-    margin-right: 5%;
+    margin-left: 3%;
+    overflow: visible;
 }
 
 .project-text{
@@ -37,14 +51,16 @@
     grid-row-start: 1;
     grid-column-start: 1;
     color: rgb(59,58, 58,var(--p, 0));
-    background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(165, 141, 233)) var(--p, 0) / var(--p, 0) no-repeat;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgb(165, 141, 233)) var(--p, 0) / var(--p, 0) no-repeat;
     text-align: center;
     line-height: 0.5vw;
     transition: .5s, background-position 0s;
     text-decoration: none;
-    z-index: 2;
+    z-index: 0;
     border-radius: 10px;
     font-size: 1rem;
+    overflow: visible;
+    justify-self: center;
     @media (max-width: 415px) {
         display: none;
     }
@@ -75,4 +91,3 @@
     background: linear-gradient(#faf593 0 0) var(--p, 0) / var(--p, 0) no-repeat;
     transition: .4s, background-position 0s;
   }
-

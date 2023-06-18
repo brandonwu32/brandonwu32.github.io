@@ -14,6 +14,12 @@ import Projects from "../components/Projects";
 import Experiences from '../components/Experiences';
 import Consulting from '../components/Consulting';
 import Search from "../components/Search";
+import Slide from 'react-reveal/Slide';
+import Zoom from 'react-reveal/Zoom';
+import Bounce from 'react-reveal/Bounce';
+import Roll from 'react-reveal/Roll';
+
+
 
 function App() {
 
@@ -131,7 +137,9 @@ function App() {
                 <p>Hello</p>
             </div>
         <div className = "page2" id = "bio">
+          <Bounce>
           <img className = "portrait" src = {Portrait} alt = "hello"></img>
+          </Bounce>
           <div className = "text">
             <div className = "socials">
                 <a className = "social" href = "https://www.linkedin.com/in/brandonwu32/" target="_blank" rel="noopener noreferrer"><img src = {Linkedin} alt = "hello"></img></a>
@@ -140,7 +148,9 @@ function App() {
                 <a className = "social" href = "https://www.instagram.com/brandonwuuu/" target="_blank" rel="noopener noreferrer"><img src = {Instagram} alt = "hello"></img></a>
 
             </div>
+            <Zoom>
             <h1 className = "greet">You landed on my Website!</h1>
+            </Zoom>
             <p className = "paragraph">I am a freshman at the University of California Berkeley. I am currently studying Computer Science in the College of Letters and Science. I enjoy doing Full-stack web development projects for tech organizations.
               <br></br><br></br>Outside of work, I am involved in some awesome organizations on Campus. I am a client developer at <a className = "highlight1">Codebase</a> where I am developing software ranging from donation-portals and webites to Machine Learning and Blockchain applications. I'm also a business analyst at <a className = "highlight2">Consult Your Community</a> where I consult for a wide variety of local businesses.
             </p>
@@ -161,23 +171,32 @@ function App() {
           </div>
           <div className = "portfolio-sections">
             <div className = "Projects" style = {{display: projectsdisplay}}>
+              <Slide left>
               <h1 className = "section-title">Projects</h1>
+              </Slide>
+              <Slide right>
               <Projects></Projects>
+              </Slide>
             </div>
             <div className = "Consulting" style = {{display: consultingdisplay}}>
+              <Slide left>
               <h1 className = "section-title">Consulting</h1>
+              </Slide>
+              <Slide right>
               <Consulting></Consulting>
+              </Slide>
             </div>
             <div className = "Experiences" style = {{display: experiencesdisplay}}>
+              <Slide left>
               <h1 className = "section-title">Experiences</h1>
+              </Slide>
+              <Slide right>
               <Experiences></Experiences>
+              </Slide>
             </div>
             <div className = "Search" style = {{display: searchdisplay}}>
               <h1 className = "section-title">Search</h1>
               <Search></Search>
-            </div>
-            <div id = "bottom" className = "bottom">
-                -
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import "./Consulting.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Projectbox from "./Projectbox";
+import Consultingbox from "./Consultingbox";
 
 function Projects() {
     let [projectboxes, setprojectboxes] = useState([]);
@@ -24,6 +24,9 @@ function Projects() {
               role: entry["Role"],
               desc: entry["Description"],
               image: entry["Image"],
+              skills: entry["Skills"],
+              what: entry["What It Does"],
+              how: entry["How It Was Made"],
             }
             items.push(item);
           });
@@ -34,7 +37,7 @@ function Projects() {
     return (
         <div className = "projects">
           {projectboxes.map(project => (
-            <Projectbox name = {project.name} startend = {project.startend} role = {project.role} desc = {project.desc} image = {project.image}/>
+            <Consultingbox name = {project.name} startend = {project.startend} role = {project.role} desc = {project.desc} image = {project.image}/>
           ))}
         </div>
     );

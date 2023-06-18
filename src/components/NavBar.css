@@ -31,11 +31,10 @@
 }
 
 .menu-button{
-    height: 50%;
     background: transparent;
     border-color: transparent;
     cursor: pointer;
-    position: relative; 
+    position: relative;
     display: block;
     text-align: center;
     font-size: 30px;

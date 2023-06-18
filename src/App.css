@@ -213,9 +213,6 @@
   color: white;
   text-decoration: underline;
   z-index: 4;
-  @media (max-width: 415px){
-
-  }
 }
 
 .page3{
@@ -225,7 +222,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .portfolio{
@@ -234,6 +231,10 @@
   padding-left: 5%;
   padding-top: 5%;
   color: white;
+}
+
+.portfolio-sections{
+  height: 100%;
 }
 
 .portfolio-menu{
@@ -266,7 +267,7 @@
 }
 
 .All{
-  
+
 }
 
 .Projects{
@@ -279,12 +280,16 @@
   text-align: left;
   padding-top: 1vw;
   transition: display 1s;
+  z-index: 1;
+
 }
 
 .Consulting{
   text-align: left;
   padding-top: 1vw;
   transition: display 1s;
+  z-index: 1;
+
 }
 
 .Search{
