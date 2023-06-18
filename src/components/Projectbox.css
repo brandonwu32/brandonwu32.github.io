@@ -51,7 +51,7 @@
     grid-row-start: 1;
     grid-column-start: 1;
     color: rgb(59,58, 58,var(--p, 0));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgb(165, 141, 233)) var(--p, 0) / var(--p, 0) no-repeat;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgb(128, 155, 222)) var(--p, 0) / var(--p, 0) no-repeat;
     text-align: center;
     line-height: 0.5vw;
     transition: .5s, background-position 0s;

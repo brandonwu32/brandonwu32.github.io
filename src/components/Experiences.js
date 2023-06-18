@@ -24,9 +24,7 @@ function Experiences() {
               role: entry["Role"],
               desc: entry["Description"],
               image: entry["Image"],
-              where: entry["Where Was It"],
-              what: entry["What I Did"],
-              skills: entry["Skills"],
+              id: entry["ID"],
             }
             items.push(item);
           });
@@ -37,7 +35,7 @@ function Experiences() {
     return (
         <div className = "projects">
           {projectboxes.map(project => (
-            <Experiencebox name = {project.name} startend = {project.startend} role = {project.role} desc = {project.desc} image = {project.image}/>
+            <Experiencebox name = {project.name} startend = {project.startend} role = {project.role} desc = {project.desc} image = {project.image} id = {project.id}/>
           ))}
         </div>
     );

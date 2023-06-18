@@ -7,6 +7,7 @@ import ProjectsPage from './pages/ProjectPage';
 import ExperiencesPage from './pages/ExperiencePage';
 import ConsultingPage from './pages/ConsultingPage';
 import SearchPage from './pages/SearchPage';
+import ExperienceMore from './pages/ExperienceMore'
 import { useEffect, useState } from "react";
 
 
@@ -52,6 +53,7 @@ function App() {
           <Route path = "/experiences" element={<ExperiencesPage/>}/>
           <Route path = "/consulting" element={<ConsultingPage/>}/>
           <Route path = "/search" element={<SearchPage/>}/>
+          <Route exact path='/experiencemore/:id' element={<ExperienceMore/>}/>
         </Routes>
         <div className = "footer">
           Made with 💪 by Brandon Wu

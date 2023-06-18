@@ -13,6 +13,7 @@ function Menu(props){
     function Exit() {
         setMenuDisplay("0%");
         setTimeout(props.exit, 500);
+        return true;
     };
 
     return (
@@ -20,11 +21,11 @@ function Menu(props){
             <img className = "exit-icon" src = {X} alt = "hello"></img>
             <button className = "exit" onClick = {() => Exit()}></button>
             <ul className="nav-links">
-				<li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
-				<li><NavLink to="/projects" className={({ isActive }) => isActive ? "active" : ""}>Projects</NavLink></li>
-                <li><NavLink to="/experiences"className={({ isActive }) => isActive ? "active" : ""}>Experience</NavLink></li>
-				<li><NavLink to="/consulting" className={({ isActive }) => isActive ? "active" : ""}>Consulting</NavLink></li>
-                <li><NavLink to="/search" className={({ isActive }) => isActive ? "active" : ""}>Search 🔎</NavLink></li>
+				<li><NavLink onClick = {Exit} to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
+				<li><NavLink onClick = {Exit} to="/projects" className={({ isActive }) => isActive ? "active" : ""}>Projects</NavLink></li>
+                <li><NavLink onClick = {Exit} to="/experiences"className={({ isActive }) => isActive ? "active" : ""}>Experience</NavLink></li>
+				<li><NavLink onClick = {Exit} to="/consulting" className={({ isActive }) => isActive ? "active" : ""}>Consulting</NavLink></li>
+                <li><NavLink onClick = {Exit} to="/search" className={({ isActive }) => isActive ? "active" : ""}>Search 🔎</NavLink></li>
 			</ul>
         </div>
     );
