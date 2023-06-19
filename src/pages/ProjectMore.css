@@ -109,6 +109,24 @@
     }
 }
 
+.more-how{
+    width: 80%;
+    text-align: left;
+    font-family: Poppins;
+    @media (max-width: 415px) {
+        text-align: center;
+    }
+}
+
+.more-where{
+    width: 80%;
+    text-align: right;
+    font-family: Poppins;
+    @media (max-width: 415px) {
+        text-align: center;
+    }
+}
+
 .more-more{
     color: white;
     width: 80%;

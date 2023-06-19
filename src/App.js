@@ -8,6 +8,8 @@ import ExperiencesPage from './pages/ExperiencePage';
 import ConsultingPage from './pages/ConsultingPage';
 import SearchPage from './pages/SearchPage';
 import ExperienceMore from './pages/ExperienceMore'
+import ConsultingMore from './pages/ConsultingMore';
+import ProjectMore from './pages/ProjectMore';
 import { useEffect, useState } from "react";
 
 
@@ -54,6 +56,8 @@ function App() {
           <Route path = "/consulting" element={<ConsultingPage/>}/>
           <Route path = "/search" element={<SearchPage/>}/>
           <Route exact path='/experiencemore/:id' element={<ExperienceMore/>}/>
+          <Route exact path='/consultingmore/:id' element={<ConsultingMore/>}/>
+          <Route exact path='/projectmore/:id' element={<ProjectMore/>}/>
         </Routes>
         <div className = "footer">
           Made with 💪 by Brandon Wu

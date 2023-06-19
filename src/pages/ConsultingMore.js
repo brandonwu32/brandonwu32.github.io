@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
-function ExperienceMore() {
+function ConsultingMore() {
     const {id} = useParams();
     const [ moreName, setMoreName ] = useState(null);
     const [ moreIs, setMoreIs ] = useState(null);
@@ -69,4 +69,4 @@ function ExperienceMore() {
     );
 }
 
-export default ExperienceMore;
+export default ConsultingMore;
