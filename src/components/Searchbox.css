@@ -1,0 +1,16 @@
+.search-box{
+    text-decoration: none;
+    width: 100vw;
+    justify-content: left;
+    display: flex;
+    gap: 5vw;
+    border-bottom: solid white 0.1px;
+}
+
+.search-column{
+    width: 20vw;
+    color: white;
+    text-decoration: none;
+    margin-left: 8vw;
+    font-family: Poppins;
+}

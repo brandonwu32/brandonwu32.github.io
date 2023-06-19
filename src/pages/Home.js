@@ -154,14 +154,13 @@ function App() {
             <p className = "paragraph">I am a freshman at the University of California Berkeley. I am currently studying Computer Science in the College of Letters and Science. I enjoy doing Full-stack web development projects for tech organizations.
               <br></br><br></br>Outside of work, I am involved in some awesome organizations on Campus. I am a client developer at <a className = "highlight1">Codebase</a> where I am developing software ranging from donation-portals and webites to Machine Learning and Blockchain applications. I'm also a business analyst at <a className = "highlight2">Consult Your Community</a> where I consult for a wide variety of local businesses.
             </p>
-            <a className = "resume" href ="https://drive.google.com/file/d/1wJuL1wxXP0gBcLDagE9dziapTa9uzZpP/view" target="_blank" rel="noopener noreferrer">View Resume</a>
             <br></br>
             <br></br>
           </div>
 
         </div>
         <div className = "page3">
-          <p className = "portfolio">Portfolio</p>
+          <p className = "portfolio" id = "portfolio">Portfolio</p>
           <div className = "portfolio-menu">
               <button onClick = {toggleAll} className = "portfolio-item"><p style = {{color: allColor}}>All</p></button>
               <button onClick = {toggleProjects} className = "portfolio-item"><p style = {{color: projectsColor}}>Projects</p></button>

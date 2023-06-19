@@ -301,6 +301,6 @@
 .footer{
   font-family: Poppins;
   padding: 0.5rem;
-  background-color: #363F55;
+  background-image: linear-gradient(to top, #363F55, transparent);
   color: white;
 }

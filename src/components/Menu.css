@@ -10,7 +10,7 @@
     };
     height: 100%;
     display: hidden;
-    transition: width 0.2s ease-in;
+    transition: width 1s;
 }
 
 .exit{
@@ -48,7 +48,22 @@ li a{
     background: linear-gradient(#faf593 0 0) var(--p, 0) / var(--p, 0) no-repeat;
     transition: .4s, background-position 0s;
     text-decoration: underline #faf593;
+    margin-right: 0.5vw;
 }
 
 li a:hover {  --p: 100%; color: #000000; text-decoration: none;}
+
+li button{
+    list-style-type: none;
+    border: none;
+    text-align: right;
+    font-size: 2rem;
+    font-family: Poppins;
+    color: white;
+    background: linear-gradient(#faf593 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: .4s, background-position 0s;
+    text-decoration: underline #faf593;
+}
+
+li button:hover {  --p: 100%; color: #000000; text-decoration: none;}
 

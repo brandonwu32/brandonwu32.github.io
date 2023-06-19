@@ -3,14 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from './components/NavBar';
 import Menu from "./components/Menu";
 import Home from './pages/Home';
-import ProjectsPage from './pages/ProjectPage';
-import ExperiencesPage from './pages/ExperiencePage';
-import ConsultingPage from './pages/ConsultingPage';
-import SearchPage from './pages/SearchPage';
 import ExperienceMore from './pages/ExperienceMore'
 import ConsultingMore from './pages/ConsultingMore';
 import ProjectMore from './pages/ProjectMore';
-import { useEffect, useState } from "react";
+import Resume from "./pages/Resume";
+import Portfolio from "./pages/Portfolio";
+import { useState } from "react";
 
 
 function App() {
@@ -51,10 +49,8 @@ function App() {
         </div>
         <Routes>
           <Route exact path = "/" element={<Home reference="home"/>}/>
-          <Route path = "/projects" element={<ProjectsPage/>}/>
-          <Route path = "/experiences" element={<ExperiencesPage/>}/>
-          <Route path = "/consulting" element={<ConsultingPage/>}/>
-          <Route path = "/search" element={<SearchPage/>}/>
+          <Route exact path = "/portfolio" element={<Portfolio/>}/>
+          <Route exact path = "/cv" element={<Resume/>}/>
           <Route exact path='/experiencemore/:id' element={<ExperienceMore/>}/>
           <Route exact path='/consultingmore/:id' element={<ConsultingMore/>}/>
           <Route exact path='/projectmore/:id' element={<ProjectMore/>}/>
