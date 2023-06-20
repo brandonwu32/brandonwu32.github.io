@@ -129,7 +129,7 @@
   padding-top: 8%;
   padding-bottom: 6%;
   cursor: url("https://cdn.custom-cursor.com/db/6278/32/minecraft-diamond-sword-and-diamond-cursor-a.png"), pointer;
-  @media (max-width: 1600px){
+  @media (max-width: 415px){
     width: 40vw;
     height: 40vw;
     margin-top: 8vh;
