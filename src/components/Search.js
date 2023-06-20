@@ -9,7 +9,7 @@ function Search() {
 
   function getFiltered(list, query){
     if (query) {
-      return list.filter(item => item.name.toLowerCase().includes(query.toString().toLowerCase()));
+      return list.filter(item => (item.name.toLowerCase().includes(query.toString().toLowerCase()) || item.skills.toLowerCase().includes(query.toString().toLowerCase())));
     }
     else{
       return list;

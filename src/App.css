@@ -235,6 +235,7 @@
 
 .portfolio-sections{
   height: 100%;
+  transition: 2s;
 }
 
 .portfolio-menu{

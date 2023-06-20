@@ -1,6 +1,4 @@
-import "./Projectbox.css";
 import {Link} from "react-router-dom";
-
 
 function Experiencebox(props){
     return (
