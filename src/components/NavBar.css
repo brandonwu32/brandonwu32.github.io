@@ -9,11 +9,11 @@
     height: 10%;
     align-items: center;
     justify-content: left;
-    gap: 80vw;
+    gap: 75vw;
     transition: background-color 0.5s;
     backdrop-filter: blur(4px);
     @media (max-width: 415px){
-        gap: 50vw;
+        gap: 40vw;
     }
 }
 

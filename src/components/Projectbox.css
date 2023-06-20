@@ -7,7 +7,7 @@
     border: none;
     background-color: white;
     cursor: pointer;
-    @media (max-width: 415px) {
+    @media (max-width: 1000px) {
         height: 7vh;
     }
 
@@ -21,10 +21,6 @@
     border: none;
     background-color: transparent;
     align-items: center;
-    @media (max-width: 415px) {
-        height: 7vh;
-    }
-
 }
 
 .value{
@@ -35,7 +31,6 @@
 
 .project-box{
     width: 25vw;
-    height: 100%;
     margin-top: 1vw;
     justify-content: right;
     display: grid;

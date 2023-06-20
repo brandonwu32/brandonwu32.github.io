@@ -32,7 +32,7 @@
     margin-bottom: 2vw;
     border: none;
     transition: 1s;
-    @media (max-width: 415px) {
+    @media (max-width: 1600px) {
         width: 80%;
     }
 }
@@ -51,7 +51,7 @@
     font-family: Kaushan;
     width: 100%;
     font-size: 3rem;
-    @media (max-width: 415px) {
+    @media (max-width: 1600px) {
         padding-top: 12vw;
     }
 }
