@@ -24,9 +24,8 @@
     width: auto;
     position: fixed;
     z-index: -1;
-    @media (max-width: 1600px){
-      width: auto;
-      height: 100%;
+    @media (min-width: 415){
+      height: 110%;
   }
   }
 }
