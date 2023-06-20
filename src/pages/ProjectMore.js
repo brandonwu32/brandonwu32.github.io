@@ -56,7 +56,7 @@ function ProjectMore() {
           });
         })
         .catch(err=> console.log(err));
-      }, []);
+      }, [id]);
     return (
 
         <div className = "shaded-background">

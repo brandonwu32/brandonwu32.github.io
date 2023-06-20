@@ -49,7 +49,7 @@ function ConsultingMore() {
           });
         })
         .catch(err=> console.log(err));
-      }, []);
+      }, [id]);
     return (
         <div className = "shaded-background">
             <div className = "article">
