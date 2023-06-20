@@ -103,7 +103,7 @@
   bottom: 0%;
   width: auto;
   height: auto;
-  @media (max-width: 1600px){
+  @media (max-width: 415px){
     width: 100vw;
     height: auto;
 }
@@ -151,7 +151,7 @@
   filter: invert(1);
   transition: .5s;
   align-self: center;
-  @media (max-width: 1600px){
+  @media (max-width: 415px){
     width: 40px;
   };
 }
@@ -175,7 +175,7 @@
   font-family: Poppins;
   font-weight: lighter;
   font-size: 3rem;
-  @media (max-width: 1600px){
+  @media (max-width: 415px){
     font-size: 2rem;
   }
 }
@@ -186,7 +186,7 @@
   font-weight: lighter;
   font-size: 1rem;
   line-height: 2rem;
-  @media (max-width: 800px){
+  @media (max-width: 415px){
     display: none;
   }
 }
