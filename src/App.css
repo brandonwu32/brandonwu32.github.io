@@ -243,6 +243,9 @@
   flex-direction: row;
   width: 100%;
   gap: 3%;
+  @media (max-width: 415px) {
+    gap: 1%;
+  }
 }
 
 .portfolio-item{

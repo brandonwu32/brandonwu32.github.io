@@ -1,4 +1,3 @@
-import background from '../static/background_image.jpg';
 import './Home.css';
 import NavBar from '../components/NavBar';
 import { useState, useEffect } from "react";
@@ -111,7 +110,6 @@ function App() {
 
       <div className="App">
         <header className="App-header">
-          <img src={background} className="background" alt="logo"/>
           <Typewriter
                 options={{loop: true,}}
                 onInit={(typewriter) => {

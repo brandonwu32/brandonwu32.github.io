@@ -6,9 +6,9 @@ import Home from './pages/Home';
 import ExperienceMore from './pages/ExperienceMore'
 import ConsultingMore from './pages/ConsultingMore';
 import ProjectMore from './pages/ProjectMore';
-import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import { useState } from "react";
+import background from './static/background_image.jpg';
 
 
 function App() {
@@ -41,6 +41,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <img src={background} className="background" alt="logo"/>
         <div className = "nav">
           <NavBar exit = {displayMenu} background_color = {navBackground} headerColor = {headerColor} menuButtonFilter = {menuButtonFilter} gradient = {navBarGradient}></NavBar>
           <div className = "menu-app">
@@ -50,7 +51,6 @@ function App() {
         <Routes>
           <Route exact path = "/" element={<Home reference="home"/>}/>
           <Route exact path = "/portfolio" element={<Portfolio/>}/>
-          <Route exact path = "/cv" element={<Resume/>}/>
           <Route exact path='/experiencemore/:id' element={<ExperienceMore/>}/>
           <Route exact path='/consultingmore/:id' element={<ConsultingMore/>}/>
           <Route exact path='/projectmore/:id' element={<ProjectMore/>}/>

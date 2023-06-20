@@ -58,6 +58,7 @@ function ProjectMore() {
         .catch(err=> console.log(err));
       }, []);
     return (
+
         <div className = "shaded-background">
             <div className = "article">
                 <h1 className = "more-title">{moreName}</h1>

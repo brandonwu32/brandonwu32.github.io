@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Consultingbox from "./Consultingbox";
 
-function Projects() {
+function Consulting() {
     let [projectboxes, setprojectboxes] = useState([]);
     useEffect(() => {
         const url = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.env.REACT_APP_CONS_ID}`;
@@ -41,7 +41,7 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default Consulting;
 
 /*            {projectboxes.map(item => (
                 <Projectbox name={item["name"]} startend = {item['startend']} role={item["role"]} desc={item["desc"]}/>
