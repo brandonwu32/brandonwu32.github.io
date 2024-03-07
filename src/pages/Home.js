@@ -1,20 +1,19 @@
 import './Home.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import Earth from "../static/Earth.png";
 import Rocket from "../static/rocket.png";
-import Portrait from "../static/Portrait.png";
-import Instagram from "../static/instagram.png";
-import Github from "../static/github.png";
-import Facebook from "../static/facebook.png";
-import Linkedin from "../static/linkedin.png";
+import Portrait from "../static/Portrait.svg";
+import Instagram from "../static/insta.svg";
+import Github from "../static/github.svg";
+import Facebook from "../static/fb.svg";
+import Linkedin from "../static/linkedin.svg";
 import Projects from "../components/Projects";
 import Experiences from '../components/Experiences';
 import Consulting from '../components/Consulting';
 import Search from "../components/Search";
 import Slide from 'react-reveal/Slide';
-import Zoom from 'react-reveal/Zoom';
-import Bounce from 'react-reveal/Bounce';
+import axios from "axios";
 
 function App() {
 
@@ -27,8 +26,34 @@ function App() {
   const [ consultingColor, setConsultingColor] = useState("white");
   const [ experiencesColor, setExperiencesColor] = useState("white");
   const [ searchColor, setSearchColor] = useState("white");
+  const [ firstParagraph, setFirstParagraph ] = useState("")
+  const [ secondParagraph, setSecondParagraph ] = useState("")
 
-
+  useEffect(() => {
+    const url = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.env.REACT_APP_BIO_ID}`;
+    const config = {
+      headers : {
+        "Authorization" : `Bearer ${process.env.REACT_APP_AUTH_TOKEN}`,
+      }
+    };
+    axios.get(url, config)
+    .then(res => {
+      let tableEntries = res.data.records;
+      tableEntries.forEach(record => {
+        let entry = record.fields;
+        let item = {
+          p_number: entry["Paragraph Number"],
+          text: entry["Text"]
+        }
+        if (item.p_number == "0") {
+          setFirstParagraph(item.text);
+        } else {
+          setSecondParagraph(item.text);
+        }
+      });
+    })
+    .catch(err=> console.log(err));
+  }, []);
 
   function toggleAll() {
     setProjectsColor("white");
@@ -110,6 +135,9 @@ function App() {
                 options={{loop: true,}}
                 onInit={(typewriter) => {
                     typewriter
+                        .typeString("Welcome to my page")
+                        .pauseFor(1000)
+                        .deleteAll()
                         .typeString("Innovator")
                         .pauseFor(1000)
                         .deleteAll()
@@ -117,6 +145,24 @@ function App() {
                         .pauseFor(1000)
                         .deleteAll()
                         .typeString("Developer")
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("Rizzler")
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("Goat")
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("Father Figure")
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("Best PM")
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("Handsome")
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("W Mans")
                         .pauseFor(1000)
                         .deleteAll()
                         .typeString("Student")
@@ -131,9 +177,7 @@ function App() {
                 <p>Hello</p>
             </div>
         <div className = "page2" id = "bio">
-          <Bounce>
           <img className = "portrait" src = {Portrait} alt = "hello"></img>
-          </Bounce>
           <div className = "text">
             <div className = "socials">
                 <a className = "social" href = "https://www.linkedin.com/in/brandonwu32/" target="_blank" rel="noopener noreferrer"><img src = {Linkedin} alt = "hello"></img></a>
@@ -142,12 +186,8 @@ function App() {
                 <a className = "social" href = "https://www.instagram.com/brandonwuuu/" target="_blank" rel="noopener noreferrer"><img src = {Instagram} alt = "hello"></img></a>
 
             </div>
-            <Zoom>
             <h1 className = "greet">You landed on my Website!</h1>
-            </Zoom>
-            <p className = "paragraph">I am a freshman at the University of California Berkeley. I am currently studying Computer Science in the College of Letters and Science. I enjoy doing Full-stack web development projects for tech organizations.
-              <br></br><br></br>Outside of work, I am involved in some awesome organizations on Campus. I am a client developer at <a className = "highlight1" href = "https://codebase.berkeley.edu/" target="_blank" rel="noopener noreferrer">Codebase</a> where I am developing software ranging from donation-portals and webites to Machine Learning and Blockchain applications. I'm also a business analyst at <a className = "highlight2" href = "https://www.cycberkeley.org/" target="_blank" rel="noopener noreferrer">Consult Your Community</a> where I consult for a wide variety of local businesses.
-            </p>
+            <p className = "paragraph">{firstParagraph} <br/> <br/> {secondParagraph}</p>
             <br></br>
             <br></br>
           </div>

@@ -18,7 +18,6 @@ function Menu(props){
         return true;
     };
 
-    let [cvbox, setcvboxes] = useState([]);
     useEffect(() => {
         const url = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.env.REACT_APP_CV_ID}`;
         const config = {
@@ -38,7 +37,6 @@ function Menu(props){
             items.push(item);
             setcvlink(item.link);
           });
-          setcvboxes(items);
         })
         .catch(err=> console.log(err));
       }, []);

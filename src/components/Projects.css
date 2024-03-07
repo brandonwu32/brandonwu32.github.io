@@ -1,7 +1,7 @@
 .projects{
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
     overflow-y: hidden;
     width: 100vw;
+    gap: 2%;
 }

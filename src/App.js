@@ -8,7 +8,7 @@ import ConsultingMore from './pages/ConsultingMore';
 import ProjectMore from './pages/ProjectMore';
 import Portfolio from "./pages/Portfolio";
 import { useState } from "react";
-import background from './static/background_image.jpg';
+import background from './static/background.svg';
 
 
 function App() {
