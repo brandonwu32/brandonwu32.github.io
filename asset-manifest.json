@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1cfcb66.css",
-    "main.js": "/static/js/main.2f92c657.js",
+    "main.css": "/static/css/main.15304726.css",
+    "main.js": "/static/js/main.63879bcd.js",
     "static/js/787.a840fbe2.chunk.js": "/static/js/787.a840fbe2.chunk.js",
-    "static/media/background_image.jpg": "/static/media/background_image.1efa43aa888c30bb4002.jpg",
+    "static/media/Portrait.svg": "/static/media/Portrait.61ca8cbd20269ac228e21b62dff4b086.svg",
+    "static/media/background.svg": "/static/media/background.6c55dd3fb1da8ff4230fb41af4d8dff4.svg",
     "static/media/Earth.png": "/static/media/Earth.aa4914c57ef518208189.png",
     "static/media/KaushanScript-Regular.ttf": "/static/media/KaushanScript-Regular.a668b3d996f7c50fb3fe.ttf",
-    "static/media/Portrait.png": "/static/media/Portrait.6420e3d447564df14823.png",
     "static/media/Poppins-ExtraLight.ttf": "/static/media/Poppins-ExtraLight.333cb30c20e31999802a.ttf",
+    "static/media/linkedin.svg": "/static/media/linkedin.796cedd478f5f17be4b54f480688e850.svg",
+    "static/media/insta.svg": "/static/media/insta.8e0d09ed896a9a676dc8d87e7b0ddb00.svg",
+    "static/media/fb.svg": "/static/media/fb.cb9ef1239085a01125fdb67bb75da6e6.svg",
+    "static/media/github.svg": "/static/media/github.f59c0fc656e740ea675d87136662e1f6.svg",
     "index.html": "/index.html",
-    "main.b1cfcb66.css.map": "/static/css/main.b1cfcb66.css.map",
-    "main.2f92c657.js.map": "/static/js/main.2f92c657.js.map",
+    "main.15304726.css.map": "/static/css/main.15304726.css.map",
+    "main.63879bcd.js.map": "/static/js/main.63879bcd.js.map",
     "787.a840fbe2.chunk.js.map": "/static/js/787.a840fbe2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1cfcb66.css",
-    "static/js/main.2f92c657.js"
+    "static/css/main.15304726.css",
+    "static/js/main.63879bcd.js"
   ]
 }
